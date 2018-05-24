@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firma</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="./static/materialize/css/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" href="./static/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="./static/style.css">
+
+	<script src="./static/clipboard.min.js"></script>    
+
+
+</head>
+<body id="bFirma">
+
+	<div class="row ">
+
+		<div id="Firma" class="">
+			<div class="container left z-depth-5 col m3 s12 ">
+				
+				<!-- Nombre y Apellidos -->
+				<div class="asd input-field">
+					<i class="prefix fas fa-user"></i>
+					<input id="nombre" name="nombre" type="text" required>
+					<label for="nombre" class="active">Nombre y Apellidos </label>
+				</div>
+				
+				<!-- Posicion -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-id-badge fa-2x"></i>
+					<input id="posicion" name="posicion" type="text" required>
+					<label for="posicion" class="active">Posicion </label>
+				</div>
+
+				<!-- Surcursal -->
+				 <div class=" asd ">
+					<select id="select" class=" browser-default">
+						<option value="" disabled selected >Sucursal</option>
+						<option value="27 de Febrero" >27 de Febrero</option>
+						<option value="Rómulo Betancourt" >Rómulo Betancourt</option>
+						<option value="Megacentro">Megacentro</option>
+					</select>
+				</div>
+				
+				<!-- Departamento -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-id-card fa-2x"></i>
+					<input id="departamento" name="departamento" type="text" required>
+					<label for="departamento" class="active">Departamento </label>
+				</div>
+				
+				<!-- Extension -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-phone fa-2x"></i>
+					<input id="extension" name="extension" type="text" required>
+					<label for="extension" class="active">Extensión </label>
+				</div>
+				
+				<!-- Flota -->
+				<div class="asd input-field">
+					<i class="prefix fas fa-mobile-alt fa-2x"></i>
+					<input id="flota" name="flota" type="text" required>
+					<label for="flota" class="active">Flota </label>
+				</div>
+
+				<!-- Correo -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-at fa-2x"></i>
+					<input id="correo" name="correo" type="text" required>
+					<label for="correo" class="active">Correo </label>
+				</div>
+
+				<!-- Boton -->
+				<div class="asd input-field center" >
+					<i class="prefix fa fa-at fa-2x"></i>
+					<button class="center btn waves-effect waves-light">Generar Firma</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="Correo" class="">
+			<div class="container left z-depth-5 col m8 s12">
+				<div class="cabecera">
+					Vista previa de la firma de correo electrónico
+				</div>
+
+				<div class="cuerpo">
+					<p>
+					Cuerpo del correo
+
+					ASD
+					</p>
+
+				</div>
+				
+
+				<div id="prueba" class="row">
+					<div id="imagen" class="col m4">
+						<img src="./static/image/firma.jpg">						
+					</div>
+
+					<div id="datos" class="col m3">
+						<div id="dnombre" class="a hide"><span id="snombre" class="n">Rayner Hernandez</span>  </div>
+						<div id="dposicion" class="a hide"><span id="sposicion" class="p">Soporte Técnico</span></div>
+						<!-- <div id="fdepartamento" class="a "><span id="sdepartamento" class="b">Departamento: </span>Sistemas</div> -->
+						<div id="fdepartamento" class="b ">Departamento: <span id="xdepartamento" class="a "> </span></div>
+						<div id="fsucursal" class="b hide">Sucursal: <span class="a"></span>Rómulo Betancourt</div>
+						<div id="fdireccion" class="b hide">Dirección: <span class="a"></span>Av. Rómulo No. 2154, Renacimiento, Sto. Dgo., Rep. Dom.</div>
+						<div id="fextension" class="b hide">Teléfono: <span class="a"> 829-732-0002, </span> <span class="b"> Ext: </span><span id="sextension" class="a"></span> </div>
+						<div id="fflota" class="b hide">Flota: <span id="sflota" class="a"> </span></div>
+						<div id="fcorreo" class="b hide">Correo: <span id="scorreo" class="a"></span></div>
+						<div id="fsite" class="a hide"><span class="b">Site: </span><a href="https://www.bellbank.com">www.bellbank.com</a></div>
+
+					</div>
+
+
+
+
+
+					<div id="redes" class=" redes col m1">
+
+					<i class="redes fab fa-instagram "></i>
+					<i class="redes fab fa-facebook-square "></i>
+					<i class="redes fab fa-twitter-square "></i>
+
+					<!-- 	<a href="https://www.facebook.com/bellbankrd/">
+							<img class="img" src="./static/image/face.png">
+						</a>
+						<a href=""></a>
+						<a href="https://www.instagram.com/bellbankdr/">
+							<img class="img" src="./static/image/inst.png">
+						</a>
+						<a href="https://twitter.com/bellbankdr">
+							<img class="img" src="./static/image/twe.png">
+						</a> -->
+					</div>
+				
+				</div>
+
+					<div id="boton" class=" left">
+						<button class="btn" data-clipboard-target="#prueba">
+							Copiar
+						</button>
+					</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+<script>
+	 var btns = document.querySelectorAll('button');
+    var clipboard = new ClipboardJS(btns);
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+
+
+	<script src="./static/materialize/js/materialize.min.js"></script>
+	<script src="./static/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./static/style.js"></script>
+</body>
+</html>
+
+

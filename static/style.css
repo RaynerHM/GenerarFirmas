@@ -1,0 +1,141 @@
+body{
+    background-color: white;
+}
+
+#Firma .container{
+    margin: 50px 50px 0;
+    background-color: #f3faff;
+    border-radius: 10px;
+}
+
+
+.asd{
+    margin: 50px 0 30px 0;
+    padding: 0 5px;
+    height: 20px;
+	
+}
+#bFirma i{
+	font-size: 20px;
+}
+#bFirma input{
+	height: 25px;
+	padding: 0px;
+	margin: 0px 0px 10px 30px;
+}
+
+#bFirma select{
+	height: 30px;
+}
+#Correo div{
+	background-color: transparent;
+}
+#Correo .container{
+    margin: 50px 50px 0;
+    padding: 0px 0px 0;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 601px)
+{
+	.row .col.m8 {
+    width: 60%;
+	}
+}
+#Correo .cabecera{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 50px;
+	padding: 15px;
+	margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cuerpo{
+	padding: 10px 15px;
+	margin: 0px;
+	height: 320px;
+	//background-color: white;
+
+}
+
+img{
+	margin-bottom: 20px;
+}
+#Correo .row{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 50px;
+}
+#datos a{
+	color: blue;
+}
+.a{
+	height: auto;
+	font-size: 12px;
+	font-weight: 400;
+	color: #545151;
+}
+.b{
+	font-size: 12px;
+	color: rgb(0, 128, 128);
+	font-weight: 700;
+}
+.n{
+	font-size: 14px;
+	font-weight: 700;
+}
+.p{
+	font-size: 13px;
+	font-weight: 700;
+}
+#bFirma .redes {
+	//margin-top: 15px;	
+}
+.img{
+	font-size: 2.3em;
+	display: block;
+}
+.fa-facebook-square{
+	color: #3b5998;	
+}
+.fa-twitter-square{
+	color: #55acee;	
+}
+.fa-instagram{
+	color: #9c3899;	
+}
+#redes{
+	padding: 0px;
+	border-left: -5px;1
+	border-left-color: black;
+}
+
+#redes img{
+	border-radius: 5px;
+}
+#datos{
+	margin-left: 5px;
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+#datos .col{
+    background-color: transparent;
+}
+#imagen{
+	text-align: right;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+#boton{
+	text-align: right;
+}
+#boton button{
+	margin-left: 750px;
+	margin-top: -350px;
+}
