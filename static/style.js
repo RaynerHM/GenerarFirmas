@@ -7,71 +7,117 @@
 // 27 de febrero
 //  Av.27 de Febrero #452, Mirador Norte, Sto. Dgo., Rep. Dom.
 
+console.log("hola")
+$(function() {
 
-/* Nombre*/
-$("#nombre").on('keyup', function(){
-    var value = $(this).val();
-    
-    if((this)!=""){            
-        $('#dnombre').removeClass('hide');
-        //$('#snombre').removeClass('hide');
-        $("#snombre").html(value);
-    }
-}).keyup();
+	/* Nombre*/
+	$("#nombre").on('keyup', function(){
+		var value = $(this).val();
 
-
-/* Posicion */
-$("#posicion").on('keyup', function(){
-    var value = $(this).val();
-    
-    if((this)!=""){            
-        $('#dposicion').removeClass('hide');
-        $("#sposicion").html(value);
-    }
-}).keyup();
+		if($(this).val() !=""){ 
+			$('#dnombre').removeClass('hide');
+			$("#snombre").html(value);
+		}
+		else{
+			$('#dnombre').addClass('hide');
+		}
+	}).keyup();
 
 
-/* Posicion */
-$("#departamento").on('keyup', function(){
-    var value = $(this).val();
-    
-    if((this)!=""){            
-        $('#fdepartamento').removeClass('hide');
-        $("#xdepartamento").html(value);
-    }
-}).keyup();
+	/* Posicion */
+	$("#posicion").on('keyup', function(){
+		var value = $(this).val();
+		
+		if($(this).val() !=""){ 
+			$('#dposicion').removeClass('hide');
+			$("#sposicion").html(value);
+		}
+		else{
+			$('#dposicion').addClass('hide');
+		}
+	}).keyup();
 
 
-/* Telefono */
-$("#extension").on('keyup', function(){
-    var value = $(this).val();
-    if((this)!=""){   
-        $('#fextension').removeClass('hide');
-        $("#sextension").html(value);
-    }
-}).keyup();
+	/* Departamento */
+	$("#departamento").on('keyup', function(){
+		var value = $(this).val();
+		if($(this).val() !=""){ 
+			console.log($(this))           
+			$('#fdepartamento').removeClass('hide');
+			$("#xdepartamento").html(value);
+		}
+		else{
+			$('#fdepartamento').addClass('hide');
+		}
+	}).keyup();
 
 
-/* Flota */
-$("#flota").on('keyup', function(){
-    var value = $(this).val();
-    
-    if((this)!=""){            
-        $('#fflota').removeClass('hide');
-        $("#sflota").html(value);
-    }
-}).keyup();
+$('select#select').on('change',function(){
+    var valor = $(this).val();
+    var v_27f = "Av.27 de Febrero #452, Mirador Norte, Sto. Dgo., Rep. Dom."
+	var v_meg = "1er Nivel, Paseo de la Fauna, 11519, Sto. Dgo., Rep. Dom."
+	var v_rom = "Av. Rómulo No. 2154, Renacimiento, Sto. Dgo., Rep. Dom."
+
+    if(valor =="27 de Febrero"){ 
+		$('#fdireccion').removeClass('hide');
+		$("#sdireccion").html(v_27f);
+	}
+	else if(valor =="Rómulo Betancourt"){ 
+		$('#fdireccion').removeClass('hide');
+		$("#sdireccion").html(v_rom);
+	}
+	else if(valor =="Megacentro"){ 
+		$('#fdireccion').removeClass('hide');
+		$("#sdireccion").html(v_meg);
+	}
+	else
+	{
+		$('#fdireccion').addClass('hide');
+	}
+});
 
 
-/* Correo */
-$("#correo").on('keyup', function(){
-    var value = $(this).val();
-    
-    if((this)!=""){            
-        $('#fcorreo').removeClass('hide');
-        $("#scorreo").html(value);
-    }
-    else{
-        $('#fcorreo').addClass('hide');        
-    }
-}).keyup();
+
+
+
+	/* Extension */
+	$("#extension").on('keyup', function(){
+		var value = $(this).val();
+		if($(this).val() !=""){ 
+			$('#fextension').removeClass('hide');
+			$("#sextension").html(value);
+		}
+		else{
+			$('#fextension').addClass('hide');
+		}
+	}).keyup();
+
+
+	/* Flota */
+	$("#flota").on('keyup', function(){
+		var value = $(this).val();
+		
+		if($(this).val() !=""){ 
+			$('#fflota').removeClass('hide');
+			$("#sflota").html(value);
+		}
+		else{
+			$('#fflota').addClass('hide');
+		}
+	}).keyup();
+
+
+	/* Correo */
+	$("#correo").on('keyup', function(){
+		var value = $(this).val();
+		
+		if($(this).val() !=""){ 
+			$('#fcorreo').removeClass('hide');
+			$("#scorreo").html(value);
+		}
+		else{
+			$('#fcorreo').addClass('hide');        
+		}
+	}).keyup();
+
+});
