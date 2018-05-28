@@ -7,18 +7,19 @@
 // 27 de febrero
 //  Av.27 de Febrero #452, Mirador Norte, Sto. Dgo., Rep. Dom.
 
-console.log("hola")
 $(function() {
 
 	/* Nombre*/
 	$("#nombre").on('keyup', function(){
 		var value = $(this).val();
 
-		if($(this).val() !=""){ 
+		if($(this).val() !="")
+		{ 
 			$('#dnombre').removeClass('hide');
 			$("#snombre").html(value);
 		}
-		else{
+		else
+		{
 			$('#dnombre').addClass('hide');
 		}
 	}).keyup();
@@ -28,7 +29,8 @@ $(function() {
 	$("#posicion").on('keyup', function(){
 		var value = $(this).val();
 		
-		if($(this).val() !=""){ 
+		if($(this).val() !="")
+		{ 
 			$('#dposicion').removeClass('hide');
 			$("#sposicion").html(value);
 		}
@@ -41,12 +43,14 @@ $(function() {
 	/* Departamento */
 	$("#departamento").on('keyup', function(){
 		var value = $(this).val();
-		if($(this).val() !=""){ 
+		if($(this).val() !="")
+		{ 
 			console.log($(this))           
 			$('#fdepartamento').removeClass('hide');
 			$("#xdepartamento").html(value);
 		}
-		else{
+		else
+		{
 			$('#fdepartamento').addClass('hide');
 		}
 	}).keyup();
@@ -54,19 +58,22 @@ $(function() {
 
 $('select#select').on('change',function(){
     var valor = $(this).val();
-    var v_27f = "Av.27 de Febrero #452, Mirador Norte, Sto. Dgo., Rep. Dom."
-	var v_meg = "1er Nivel, Paseo de la Fauna, 11519, Sto. Dgo., Rep. Dom."
-	var v_rom = "Av. Rómulo No. 2154, Renacimiento, Sto. Dgo., Rep. Dom."
+    var v_27f = "Av.27 de Febrero #452, Mirador Norte, Sto. Dgo. Rep. Dom."
+	var v_meg = "1er Nivel, Paseo de la Fauna, 11519, Sto. Dgo. Rep. Dom."
+	var v_rom = "Av. Rómulo No. 2154, Renacimiento, Sto. Dgo. Rep. Dom."
 
-    if(valor =="27 de Febrero"){ 
+    if(valor =="27 de Febrero")
+    { 
 		$('#fdireccion').removeClass('hide');
 		$("#sdireccion").html(v_27f);
 	}
-	else if(valor =="Rómulo Betancourt"){ 
+	else if(valor =="Rómulo Betancourt")
+	{ 
 		$('#fdireccion').removeClass('hide');
 		$("#sdireccion").html(v_rom);
 	}
-	else if(valor =="Megacentro"){ 
+	else if(valor =="Megacentro")
+	{ 
 		$('#fdireccion').removeClass('hide');
 		$("#sdireccion").html(v_meg);
 	}
@@ -83,11 +90,13 @@ $('select#select').on('change',function(){
 	/* Extension */
 	$("#extension").on('keyup', function(){
 		var value = $(this).val();
-		if($(this).val() !=""){ 
+		if($(this).val() !="")
+		{ 
 			$('#fextension').removeClass('hide');
 			$("#sextension").html(value);
 		}
-		else{
+		else
+		{
 			$('#fextension').addClass('hide');
 		}
 	}).keyup();
@@ -97,11 +106,13 @@ $('select#select').on('change',function(){
 	$("#flota").on('keyup', function(){
 		var value = $(this).val();
 		
-		if($(this).val() !=""){ 
+		if($(this).val() !="")
+		{ 
 			$('#fflota').removeClass('hide');
 			$("#sflota").html(value);
 		}
-		else{
+		else
+		{
 			$('#fflota').addClass('hide');
 		}
 	}).keyup();
@@ -111,11 +122,13 @@ $('select#select').on('change',function(){
 	$("#correo").on('keyup', function(){
 		var value = $(this).val();
 		
-		if($(this).val() !=""){ 
+		if($(this).val() !="")
+		{ 
 			$('#fcorreo').removeClass('hide');
 			$("#scorreo").html(value);
 		}
-		else{
+		else
+		{
 			$('#fcorreo').addClass('hide');        
 		}
 	}).keyup();
