@@ -72,6 +72,7 @@ $(function() {
 	}).keyup();
 
 
+
 	$('select#select').on('change',function(){
 	    var valor = $(this).val();
 	    var v_27f = "Av. 27 de Febrero #452, Mirador Norte, Sto. Dgo. Rep. Dom."
@@ -146,7 +147,4 @@ $(function() {
 		}
 	}).keyup();
 
-
-
 });
-

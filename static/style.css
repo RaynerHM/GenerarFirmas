@@ -8,12 +8,12 @@ body{
     border-radius: 10px;
 }
 
-
 .banner{
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
 }
+
 .asd{
     margin: 50px 0 50px 0;
     padding: 0 5px;
@@ -43,6 +43,13 @@ body{
     border-radius: 10px;
 }
 
+
+@media only screen and (min-width: 601px)
+{
+	.row .col.m8 {
+    width: 60%;
+	}
+}
 
 #Correo .cabecera{
 	background-color: black;
@@ -109,6 +116,8 @@ img{
 }
 #redes{
 	padding: 0px;
+	border-left: -5px;
+	border-left-color: black;
 }
 
 #redes img{
@@ -137,6 +146,11 @@ img{
 #boton{
 	padding-right: 15px;
 	text-align: right;
+}
+
+#boton button{
+	margin-left: 750px;
+	margin-top: -350px;
 }
 
 @media only screen and (min-width: 601px){
