@@ -1,4 +1,4 @@
-// Confirmar si el navegar es Mozilla
+// Confirmar si el navegar es Mozilla 
 $('#bFirma').ready(function() {
 	var url = "mensaje.html";
 	
