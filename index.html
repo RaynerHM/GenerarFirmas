@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firma</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="./static/materialize/css/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" href="./static/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="./static/style.css">
+	<link rel="icon" href="./static/image/favicon.ico" type="image / x-icon">
+
+	<script src="./static/clipboard.min.js"></script>    
+
+
+</head>
+<body id="bFirma">
+<img src="./static/image/banner.jpg" class="banner">
+	<div class="row ">
+
+		<div id="Firma" class="">
+			<div class="container left z-depth-5 col m2 s12 ">
+				
+				<!-- Nombre y Apellidos -->
+				<div class="asd input-field">
+					<i class="prefix fas fa-user"></i>
+					<input id="nombre" name="nombre" type="text" required>
+					<label for="nombre" class="active">Nombre y Apellidos </label>
+				</div>
+				
+				<!-- Posicion -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-id-badge fa-2x"></i>
+					<input id="posicion" name="posicion" type="text" required>
+					<label for="posicion" class="active">Posicion </label>
+				</div>
+
+				<!-- Surcursal -->
+				 <div class=" asd ">
+					<select id="select" class=" browser-default">
+						<option value="" disabled selected >Sucursal</option>
+						<option value="27 de Febrero" >27 de Febrero</option>
+						<option value="Rómulo Betancourt" >Rómulo Betancourt</option>
+						<option value="Megacentro">Megacentro</option>
+					</select>
+				</div>
+				
+				<!-- Departamento -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-id-card fa-2x"></i>
+					<input id="departamento" name="departamento" type="text" required>
+					<label for="departamento" class="active">Departamento </label>
+				</div>
+				
+				<!-- Extension -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-phone fa-2x"></i>
+					<input id="extension" name="extension" type="text" required>
+					<label for="extension" class="active">Extensión </label>
+				</div>
+				
+				<!-- Flota -->
+				<div class="asd input-field">
+					<i class="prefix fas fa-mobile-alt fa-2x"></i>
+					<input id="flota" name="flota" type="text" required>
+					<label for="flota" class="active">Flota </label>
+				</div>
+
+				<!-- Correo -->
+				<div class="asd input-field">
+					<i class="prefix fa fa-at fa-2x"></i>
+					<input id="correo" name="correo" type="text" required>
+					<label for="correo" class="active">Correo </label>
+				</div>
+
+				<!-- Boton -->
+<!-- 				<div class="asd input-field center" >
+					<button class="center btn waves-effect waves-light">Generar Firma</button>
+				</div>
+ -->		
+ 			</div>
+		</div>
+
+
+		<div id="Correo" class="">
+			<div class="container left z-depth-5 col m9 s12">
+				<div class="cabecera">
+					Vista previa de la firma de correo electrónico
+				</div>
+
+				<div class="cuerpo">
+					<h4 class="center ">INSTRUCCIONES</h4>
+					<p>
+					Para crear tu firma, sigue los siguientes pasos:<br>
+
+					1. Complete los datos del formulario.<br>
+
+					2. Presiona el boton COPIAR.<br>
+
+					3. En el zimbra dirigete a la pestaña Preferencias, la opcion Firmas.<br>
+
+					4. Dar clic derecho y pegar.<br>
+
+					5. Guarda los cambios.<br>
+
+					Listo!!!<br>
+
+					<span class="nota">
+					<b>Nota:</b> No agregar mensajes personales a la firma.
+					</span>
+					</p>
+					<div id="descarga" class=" right">
+						<!-- <button class="btn" onclick="descarga('./static/manual.pdf')" > -->
+						<button id="bDescarga" class="btn" >
+							<i class="fa fa-download"></i> Descargar Manual
+						</button>
+					</div>
+				</div>
+				
+
+				<div id="prueba" class="row">
+					<div id="imagen" class="col m3">
+						<img src="https://bellbanking.bellbank.com/static/images/firma.jpg">						
+					</div>
+
+					<div id="datos" class="col m3">
+						<div id="dnombre" class="a hide"><span id="snombre" class="n"></span></div>
+						<div id="dposicion" class="a hide"><span id="sposicion" class="p"></span></div>
+
+						<div id="fdepartamento" class="b hide">Departamento: <span id="xdepartamento" class="a "> </span></div>
+						<div id="fsucursal" class="b hide">Sucursal: <span class="a"></span></div>
+						<div id="fdireccion" class="b hide">Dirección: <span id="sdireccion" class="a"></span></div>
+						<div id="fextension" class="b hide">Teléfono: <span class="a"> 829-732-0002, </span> <span class="b"> Ext: </span><span id="sextension" class="a"></span> </div>
+						<div id="fflota" class="b hide">Flota: <span id="sflota" class="a"> </span></div>
+						<div id="fcorreo" class="b hide">Correo: <span id="scorreo" class="a"></span></div>
+						<div id="fsite" class="a"><span class="b">Site: </span><a href="https://www.bellbank.com">www.bellbank.com</a></div>
+					</div>
+
+
+					<div id="redes" class=" redes col m1">
+						<br>
+						<a href="https://www.facebook.com/bellbankrd/">
+							<img class="img" src="https://bellbanking.bellbank.com/static/images/face.png">
+						</a>
+						<a href=""></a>
+						<a href="https://www.instagram.com/bellbankdr/">
+							<img class="img" src="https://bellbanking.bellbank.com/static/images/inst.png">
+						</a>
+						<a href="https://twitter.com/bellbankdr">
+							<img class="img" src="https://bellbanking.bellbank.com/static/images/twe.png">
+						</a>
+					</div>
+					<br><br>
+					<br><br>
+					<br><br>
+					<br><br>
+					<br><br>
+				</div>
+
+				<div id="boton" class=" right">
+					<button class="btn" data-clipboard-target="#prueba">
+						Copiar
+					</button>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<script>
+		var btns = document.querySelectorAll('button');
+	    var clipboard = new ClipboardJS(btns);
+	    clipboard.on('success', function(e) {
+	        console.log(e);
+	    });
+	    clipboard.on('error', function(e) {
+	        console.log(e);
+	    });
+
+	    /*
+		function descarga(archivo) {
+			document.location = archivo;
+		}
+		*/
+	</script>
+
+
+	<script src="./static/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./static/materialize/js/materialize.min.js"></script>
+	<script src="./static/style.js"></script>
+	<script src="./static/jquery.browser.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,188 @@
+body{
+    background-color: white;
+}
+
+#Firma .container{
+    margin: 50px 30px 0;
+    background-color: #f3faff;
+    border-radius: 10px;
+}
+
+
+.banner{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.asd{
+    margin: 50px 0 50px 0;
+    padding: 0 5px;
+    height: 20px;
+	
+}
+#bFirma i{
+	font-size: 20px;
+}
+#bFirma input{
+	height: 40px;
+	padding: 0px;
+	margin: 0px 0px 10px 30px;
+}
+
+#bFirma select{
+	height: 30px;
+}
+#Correo div{
+	background-color: transparent;
+}
+#Correo .container{
+	height: 540px;
+    margin: 50px 0px 0;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+
+#Correo .cabecera{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 50px;
+	padding: 15px;
+	margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cuerpo{
+	padding: 10px 15px;
+	margin: 0px;
+	height: 320px;
+	//background-color: white;
+
+}
+
+img{
+	margin-bottom: 15px;
+}
+#Correo .row{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 50px;
+}
+#datos a{
+	color: blue;
+}
+.a{
+	height: auto;
+	font-size: 12px;
+	font-weight: 400;
+	color: #545151;
+}
+.b{
+	font-size: 12px;
+	color: rgb(0, 128, 128);
+	font-weight: 700;
+}
+.n{
+	font-size: 14px;
+	font-weight: 700;
+}
+.p{
+	font-size: 13px;
+	font-weight: 700;
+}
+
+#redes .img{
+	font-size: 2.3em;
+	display: block;
+	width: 30px;
+}
+.fa-facebook-square{
+	color: #3b5998;	
+}
+.fa-twitter-square{
+	color: #55acee;	
+}
+.fa-instagram{
+	color: #9c3899;	
+}
+#redes{
+	padding: 0px;
+}
+
+#redes img{
+	border-radius: 5px;
+}
+#datos{
+	margin-left: 5px;
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+#datos .col{
+    background-color: transparent;
+}
+#imagen{
+	text-align: right;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+#imagen .m3{
+	widows: 30%;
+}
+
+#boton{
+	padding-right: 15px;
+	text-align: right;
+}
+
+@media only screen and (min-width: 601px){
+	.row .col.m1 {
+	    width: 3%;
+	}
+
+	.row .col.m2 {
+	    width: 20%;
+	}
+
+	.row .col.m8 {
+    	width: 60%;
+	}
+
+	.row .col.m3 {
+	    width: 29%;
+	}
+
+	#boton button{
+		//margin-left: 750px;
+		margin-top: -400px;
+	}
+
+}
+
+@media only screen and (min-width: 1902px){
+	.row .col.m3 {
+		    width: 22.5%;
+	}
+
+	#descarga button{
+		//margin-left: 1000px;
+		margin-top: -400px;
+	}
+
+	#Firma .container{
+    	margin: 50px 80px 0;
+    }
+}
+
+.nota{
+	font-size: 20px;
+}
+
+#bDescarga{
+	padding-right: 10px;
+    padding-left: 10px;
+}
